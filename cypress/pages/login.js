@@ -11,8 +11,12 @@ class Login extends Page {
         }
     }
 
-    open() {
+    openPageUrl() {
         super.openUrl(Cypress.env('login'))
+    }
+
+    assertPageUrl() {
+        super.assertPageUrl(Cypress.env("login"))
     }
 
     setEmail(email) {

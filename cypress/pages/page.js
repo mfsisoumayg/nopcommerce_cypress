@@ -5,13 +5,13 @@ export default class Page {
     openUrl(page) {
         const url = Cypress.config('baseUrl').concat(page)
         cy.visit(url)
-        this.assertUrl(page)
+        this.assertPageUrl(page)
     }
 
     /**
      * @param {string} page 
      */
-    assertUrl(page) {
+    assertPageUrl(page) {
         cy.url().should('include', page)
     }
 

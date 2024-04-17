@@ -1,7 +1,8 @@
 import login from "../pages/login";
+import dashboard from "../pages/dashboard";
 
 Cypress.Commands.add('open', () => {
-    login.open()
+    login.openPageUrl()
 })
 
 Cypress.Commands.add('adminLogin', () => {
@@ -13,8 +14,8 @@ Cypress.Commands.add('adminLogin', () => {
     });
     login.login()
 
-    // Dashboard.assertUrl()
-    // cy.get('.content-header').should('be.visible');
+    dashboard.assertPageUrl()
+    dashboard.validateDashboard()
 })
 
 Cypress.Commands.add('userLogin', (email, password) => {
@@ -24,6 +25,6 @@ Cypress.Commands.add('userLogin', (email, password) => {
     login.setPwd(password)
     login.login()
 
-    // Dashboard.assertUrl()
-    // cy.get('.content-header').should('be.visible');
+    dashboard.assertPageUrl()
+    dashboard.validateDashboard()
 })
