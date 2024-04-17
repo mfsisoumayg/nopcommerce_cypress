@@ -2,13 +2,11 @@ import Page from "./page";
 
 class Login extends Page {
 
-    #elements() {
-        return {
-            email : cy.get('#Email'),
-            pwd : cy.get('#Password'),
-            remMe : cy.get('#RememberMe'),
-            submitBtn : cy.get('button[type=submit]')
-        }
+    #elements = {
+        email: () => cy.get('#Email'),
+        pwd: () => cy.get('#Password'),
+        remMe: () => cy.get('#RememberMe'),
+        submitBtn: () => cy.get('button[type=submit]')
     }
 
     openPageUrl() {
@@ -20,11 +18,11 @@ class Login extends Page {
     }
 
     setEmail(email) {
-        this.#elements().email.clear().type(email)
+        this.#elements.email().clear().type(email)
     }
 
     setPwd(pwd) {
-        this.#elements().pwd.clear().type(pwd)
+        this.#elements.pwd().clear().type(pwd)
     }
 
     /**
@@ -32,14 +30,14 @@ class Login extends Page {
      */
     rememberMe(state) {
         if (state) {
-            this.#elements().remMe.check()
+            this.#elements.remMe().check()
         } else {
-            this.#elements().remMe.uncheck()
+            this.#elements.remMe().uncheck()
         }
     }
 
     login() {
-        this.#elements().submitBtn.click()
+        this.#elements.submitBtn().click()
     }
 
 }

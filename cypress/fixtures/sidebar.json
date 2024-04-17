@@ -1,0 +1,102 @@
+{
+    "sideBar": {
+        "dashBoard": {
+            "name": "Dashboard"
+        },
+        "catalog": {
+            "name": "Catalog",
+            "list": {
+                "prod": {
+                    "name": "Products"
+                },
+                "cats": {
+                    "name": "Categories"
+                },
+                "manft": {
+                    "name": "Manufacturers"
+                },
+                "prodReviews": {
+                    "name": "Product reviews"
+                },
+                "prodTags": {
+                    "name": "Product tags"
+                },
+                "attr": {
+                    "name": "Attributes",
+                    "list": {
+                        "prodAttr": "Product attributes",
+                        "specAttr": "Specification attributes",
+                        "chkAttr": "Checkout attributes"
+                    }
+                }
+            }
+        }
+    },
+    "sale": {
+        "name": "Sales",
+        "list": {
+            "order": {
+                "name": "Orders"
+            },
+            "ship": {
+                "name": "Shipments"
+            },
+            "return": {
+                "name": "Return requests"
+            },
+            "recPay": {
+                "name": "Recurring payments"
+            },
+            "gift": {
+                "name": "Gift cards"
+            },
+            "shopCart": {
+                "name": "Shopping carts and wishlists"
+            }
+        }
+    },
+    "customers": {
+        "name": "Customers",
+        "list": {
+            "customers": {
+                "name": "Customers"
+            },
+            "roles": {
+                "name": "Customer roles"
+            },
+            "onlineCust": {
+                "name": "Online customers"
+            },
+            "vendor": {
+                "name": "Vendors"
+            },
+            "actLog": {
+                "name": "Activity log"
+            },
+            "actType": {
+                "name": "Activity Types"
+            },
+            "gdpr": {
+                "name": "GDPR requests (log)"
+            }
+        }
+    },
+    "promo": {
+        "name": "Promotions"
+    },
+    "contentMng": {
+        "name": "Content management"
+    },
+    "confg": {
+        "name": "Configuration"
+    },
+    "sys": {
+        "name": "System"
+    },
+    "reports": {
+        "name": "Reports"
+    },
+    "help": {
+        "name": "Help"
+    }
+}

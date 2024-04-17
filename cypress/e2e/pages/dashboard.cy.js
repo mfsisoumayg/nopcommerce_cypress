@@ -1,4 +1,5 @@
 import dashboard from "../../pages/dashboard";
+import sidebar from "../../pages/comp/sidebar";
 
 describe('dashboard page', () => {
     beforeEach('adming login', () => {
@@ -15,7 +16,6 @@ describe('dashboard page', () => {
                 return ++acc
             }, 0)
 
-            dashboard.maxCard(cards.startAcceptOrders)
             dashboard.minCard(cards.nopCommNews)
         })
     })
