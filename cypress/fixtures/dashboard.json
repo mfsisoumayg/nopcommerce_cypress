@@ -1,0 +1,15 @@
+{   
+    "cards" : {
+        "startAcceptOrders" : "Start accepting orders",
+        "nopCommNews" : "NopCommerce News",
+        "stats" : "Common statistics",
+        "orders" : "Orders",
+        "newCust" : "New customers",
+        "orderTotal" : "Order totals",
+        "incomOrder" : "Incomplete orders",
+        "latOrder" : "Latest Orders",
+        "keywords" : "Popular search keywords",
+        "bestSellerQuan" : "Bestsellers by quantity",
+        "bestSellerAmt" : "Bestsellers by amount"
+    }
+}
